@@ -412,3 +412,11 @@ footer h3 a{color:inherit}
 @media(max-width:860px){.split,.ctaw{grid-template-columns:1fr}.terms{grid-template-columns:1fr}.hero .heroph{aspect-ratio:4/5;max-height:none}.pgrid{grid-template-columns:1fr 1fr}.sec{padding:42px 0}}
 @media(max-width:520px){.occl,.fw{grid-template-columns:1fr!important}}
 .split>div{min-width:0}.tbl{overflow-x:auto;max-width:100%}.tbl table{min-width:0}
+
+.land{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:1000px;margin:0 auto}
+.land.n1{grid-template-columns:1fr;max-width:620px}
+.land.n3 figure:last-child{grid-column:1/-1;width:calc(50% - 13px);justify-self:center}
+.land figure{margin:0;background:var(--cream);border:1.5px solid var(--line);border-radius:22px;padding:10px;box-shadow:0 6px 0 rgba(120,70,30,.08)}
+.land img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;filter:saturate(1.12) contrast(1.03) brightness(1.03) sepia(.08)}
+@media(max-width:700px){.land{grid-template-columns:1fr;gap:18px}.land.n3 figure:last-child{width:100%}}
+.heroimg.wide .heroph{aspect-ratio:16/9!important;height:auto!important;align-self:center}.heroimg.wide{align-self:center}
