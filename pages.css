@@ -470,3 +470,16 @@ footer h3 a{color:inherit}
 @media(max-width:860px){.calc{grid-template-columns:1fr}.calcbox{position:static}.srow select{max-width:50%}}
 .calc>div{min-width:0}.calcl,.calcbox{box-sizing:border-box}
 @media(max-width:860px){.calc{grid-template-columns:minmax(0,1fr)}}
+
+.gchips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.gchip{font:inherit;font-weight:800;border:1.5px solid #C9A27A;background:#fff;color:#5A3015;border-radius:999px;padding:6px 14px;cursor:pointer;min-width:52px}
+.gchip.on{background:#5A3015;color:#FBF1CF;border-color:#5A3015}
+.gl select,.pc-g select{width:100%;box-sizing:border-box;font:inherit;padding:12px 14px;border:1.5px solid #C9A27A;border-radius:14px;background:#fff;color:#5A3015}
+.pgl{margin:2px 0 10px;font-weight:700}
+
+.realbar{margin-top:48px}.realbar h3{margin:0 0 14px}
+.land.sq{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px}
+.land.sq figure:last-child{grid-column:auto;width:auto;justify-self:stretch}
+.land.sq img{aspect-ratio:1/1;height:auto;filter:none;object-fit:cover}
+.land.sq figcaption{font-weight:700;padding:8px 4px 2px;font-size:.92rem}
+@media(max-width:700px){.land.sq{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.land.sq figcaption{font-size:.82rem}}
