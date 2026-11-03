@@ -483,3 +483,38 @@ footer h3 a{color:inherit}
 .land.sq img{aspect-ratio:1/1;height:auto;filter:none;object-fit:cover}
 .land.sq figcaption{font-weight:700;padding:8px 4px 2px;font-size:.92rem}
 @media(max-width:700px){.land.sq{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.land.sq figcaption{font-size:.82rem}}
+
+/* section colours and dividers (individual pages) */
+main>section.sec:not(.trust){position:relative}
+main>section.sec:not(.trust):nth-of-type(3n+2){background:#FCE6D8}
+main>section.sec:not(.trust):nth-of-type(3n+3){background:#F6EEE0}
+main>section.sec:not(.trust):nth-of-type(3n+1){background:#FBF3D4}
+main>section.sec:not(.trust)::before{content:"";position:absolute;top:-19px;left:50%;width:38px;height:38px;margin-left:-19px;border-radius:50%;background-color:#fff;background-repeat:no-repeat;background-position:center;background-size:26px;border:1.5px solid #A9783F;z-index:2;background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22 fill=%22none%22 stroke=%22%235A3015%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M16 25 C6 18 7 9 12 9 c2 0 3.5 1 4 3 c.5-2 2-3 4-3 c5 0 6 9-4 16z%22/%3E%3C/svg%3E")}
+main>section.sec:not(.trust):nth-of-type(3n+2)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22 fill=%22none%22 stroke=%22%235A3015%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M16 6 L18 14 L26 16 L18 18 L16 26 L14 18 L6 16 L14 14 Z%22/%3E%3C/svg%3E")}
+main>section.sec:not(.trust):nth-of-type(3n+3)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22 fill=%22none%22 stroke=%22%235A3015%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M16 26 C8 21 8 14 11 12 c2-1.5 3.500-.5 5 .5 c1.5-1 3-2 5-.5 c3 2 3 9-5 14z%22/%3E%3Cpath d=%22M13 9 L16 12 L19 9%22/%3E%3Ccircle cx=%2213.500%22 cy=%2217%22 r=%22.7%22 fill=%22%235A3015%22/%3E%3Ccircle cx=%2218.500%22 cy=%2217%22 r=%22.7%22 fill=%22%235A3015%22/%3E%3Ccircle cx=%2216%22 cy=%2221%22 r=%22.7%22 fill=%22%235A3015%22/%3E%3C/svg%3E")}
+main>section.sec:not(.trust)::after{content:"";position:absolute;top:0;left:0;right:0;border-top:1.5px dashed rgba(169,120,63,.45)}
+main>section.sec.trust{border-top:1.5px dashed rgba(169,120,63,.45)}
+main>section.sdx{background:#FAF3DF}
+.sdx-dw{background:#FAF3DF;padding:6px 0 26px}
+.sdx-dw .sdx-d>summary{display:inline-flex;align-items:center;gap:10px;cursor:pointer;list-style:none;background:#fff;border:2px solid #A9783F;border-radius:99px;padding:10px 20px;font:800 13px Nunito,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#5A3015}
+.sdx-dw .sdx-d>summary::-webkit-details-marker{display:none}
+.sdx-dw .sdx-d>summary::after{content:"+";font-size:18px;line-height:1}
+.sdx-dw .sdx-d[open]>summary::after{content:"\2212"}
+.sdx-dw .sdx-d>summary:hover{background:#FBF1CF}
+.sdx-dw .sdx-d>.sdx{padding:24px 0 8px}
+.sdx-dw details,.sdx-dw details[open]{border:0;border-bottom:0;padding:0;margin:0;background:none}
+/* neater hero prices, menu lists, galleries */
+.pkgs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 12px;max-width:520px}
+.pkg{min-width:0;padding:14px 18px 15px;border-radius:20px;background:#fff;box-shadow:0 4px 0 rgba(120,70,30,.08)}
+.pkg .tag{display:inline-block}
+.pkg b.pp{font:700 2.5rem/1 Gaegu,cursive;margin-top:8px}
+.pkg .pn{display:block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5530;margin-top:2px}
+.pkg .pd{display:block;font-size:.86rem;line-height:1.4;margin-top:8px;color:#5A3015}
+.panel2{display:grid;grid-template-columns:1fr 1.7fr;grid-template-rows:auto 1fr;grid-auto-flow:column;column-gap:36px;row-gap:6px;align-items:start;background:#fff}
+.panel2 h3{margin:0;font-size:1.05rem}
+.panel2 .chips{margin:4px 0 0}
+.panel2 .chips li{font-size:.84rem;padding:1px 11px}
+.land.sq img{aspect-ratio:4/3}
+.tbl+p{margin-top:14px;font-size:.92rem}
+@media(max-width:700px){.pkgs{grid-template-columns:1fr 1fr;gap:10px}.pkg{padding:12px 12px 13px}.pkg b.pp{font-size:2rem}.panel2{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row;row-gap:4px}.panel2 .chips{margin-bottom:14px}}
+.pkg:only-child{grid-column:1/-1;max-width:260px}
