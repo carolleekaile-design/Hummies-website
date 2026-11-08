@@ -573,3 +573,7 @@ header nav:has(a[data-page]){max-width:100%}
 .hero .acts .btn{font-size:1.05rem!important}
 .sticky .btn{font-size:1.02rem!important}
 }
+
+/* five-card grids (cold indulgent series) */
+.pgrid.c5{grid-template-columns:repeat(5,1fr);gap:32px 18px}
+@media(max-width:860px){.pgrid.c5{grid-template-columns:1fr 1fr}.pgrid.c5>:last-child{grid-column:1/-1;width:calc(50% - 12px);justify-self:center}}
