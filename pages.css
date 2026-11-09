@@ -577,3 +577,9 @@ header nav:has(a[data-page]){max-width:100%}
 /* five-card grids (cold indulgent series) */
 .pgrid.c5{grid-template-columns:repeat(5,1fr);gap:32px 18px}
 @media(max-width:860px){.pgrid.c5{grid-template-columns:1fr 1fr}.pgrid.c5>:last-child{grid-column:1/-1;width:calc(50% - 12px);justify-self:center}}
+
+/* dessert live station callout */
+.seoband{background:#FFF1D6;border-top:2px dashed #E7C9A3;border-bottom:2px dashed #E7C9A3;padding:18px 0}
+.seoband p{margin:0;text-align:center;font-size:1.05rem;color:#5A3015}
+.seoband a{font-weight:800;color:#5A3015;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+@media(max-width:640px){.seoband p{font-size:.98rem;padding:0 4px}}
